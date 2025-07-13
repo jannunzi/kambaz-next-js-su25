@@ -1,12 +1,14 @@
 import React from "react";
 import CourseNavigation from "./Navigation";
 
-export default function CoursesLayout({
+export default async function CoursesLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+  params,
+}: Readonly<{ children: React.ReactNode; params: Promise<{ id: string }> }>) {
+  const { id } = await params;
   return (
     <div>
-      <h1>Courses 1234</h1>
+      <h1>Courses {id}</h1>
       <hr />
       <table>
         <tbody>

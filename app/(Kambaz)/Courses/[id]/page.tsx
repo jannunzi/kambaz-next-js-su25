@@ -5,6 +5,6 @@ export default async function CoursesPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const { id } = await params; // Await to resolve the Promise
+  const { id } = await params;
   redirect(`/Courses/${id}/Home`);
 }
