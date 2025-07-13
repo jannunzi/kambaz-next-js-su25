@@ -3,11 +3,10 @@ import CourseNavigation from "./Navigation";
 
 export default function CoursesLayout({
   children,
-  params,
-}: Readonly<{ children: React.ReactNode; params: { id: string } }>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <div>
-      <h1>Courses {params.id}</h1>
+      <h1>Courses 1234</h1>
       <hr />
       <table>
         <tbody>
